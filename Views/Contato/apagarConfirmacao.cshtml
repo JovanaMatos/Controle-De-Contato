@@ -1,0 +1,15 @@
+﻿@using ControloDeContato.Models;
+@{
+    ViewData["Title"] = "Confirmaçãoa pagar Contato";
+}
+@model ContatoModel
+<form asp-action="ApagarConfirmacao" method="post" class="text-center">
+    <h3 class="titulo">Realmente deseja apagar o contacto?</h3>
+    <h4 class="letrasapagar">@Model.Nome</h4>
+    <h4 class="letrasapagar">@Model.Email</h4>
+    <h4 class="letrasapagar">@Model.Telemovel</h4>
+    <input type="hidden" name="Id" value="@Model.Id" />
+    <button type="submit" class="btn btn-outline-light btn-block col-12 mb-2">Confirmar exclusão</button>
+</form>
+
+<a class="btn btn-outline-light btn-block col-12 mb-2" role="button" asp-controller="Contato" asp-action="Index">Cancelar exclusão</a>

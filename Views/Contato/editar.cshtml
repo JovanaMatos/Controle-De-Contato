@@ -1,0 +1,36 @@
+﻿@using ControloDeContato.Models;
+
+@{
+    ViewData["Title"] = "Editar Contato";
+}
+@model ContatoModel
+
+<div class="text-center">
+    <h1 class="titulo">Editar Contato</h1>
+    </div>
+
+    <form asp-action="editar" method="post">
+    <div class="form-group mb-4">
+        <label asp-for="Nome" class="label-color">Nome</label>
+        <input type="text" class="form-control input-text-color" id="Nome" name="Nome" value="@Model.Nome" />
+    </div>
+
+    <div class="form-group mb-4">
+        <label asp-for="Email" class="label-color">E-mail</label>
+        <input type="email" class="form-control input-text-color" id="Email" name="Email" value="@Model.Email" />
+    </div>
+
+    <div class="form-group mb-4">
+        <label asp-for="Telemovel" class="label-color">Telemóvel</label>
+        <input type="text" class="form-control input-text-color" id="Telemovel" name="Telemovel" value="@Model.Telemovel" />
+    </div>
+
+    <input type="hidden" name="Id" value="@Model.Id" />
+
+    <button type="submit" class="btn btn-outline-light btn-block col-12 mb-2">Editar</button>
+    <a class="btn btn-outline-light btn-block col-12" asp-controller="Contato" asp-action="index" role="button">Voltar</a>
+    </form>
+
+
+
+

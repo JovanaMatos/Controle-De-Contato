@@ -1,0 +1,62 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+    margin-bottom: 60px;
+    background-color: #002333;
+}
+
+
+tr {
+    margin-bottom: 20px;
+    background-color: #013343;
+}
+
+
+
+.letras-brancas {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.3em;
+    Ajuste o valor conforme necessário line-height: 1.5;
+    margin: 0;
+    padding: 0;
+    color: white;
+    background-color: white;
+}
+.titulo {
+    font-family: 'Playfair Display', serif;
+    font-size: 3em;
+    color: white;
+}
+
+.label-color {
+    font-family: 'Playfair Display', serif;
+    color: #DCDCDC; /* Tomate (um tom de vermelho) */
+    font-size: 1.2em; /* Opcional: aumentar o tamanho da fonte */
+}
+
+.input-text-color {
+    font-family: 'Playfair Display', serif;
+    color: #333; /* Cor do texto dentro do campo de entrada */
+    background-color: #f9f9f9; 
+}
+
+
+.letrasapagar {
+    color: white;
+}
+.container {
+    color: white;
+}

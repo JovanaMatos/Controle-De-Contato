@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "qtBUKMRCAF4=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\geova\\source\\repos\\ControleDeContato\\ControleDeContato\\ControleDeContato.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\geova\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\7.0.1\\microsoft.extensions.logging.abstractions.7.0.1.nupkg.sha512",
+    "C:\\Users\\geova\\.nuget\\packages\\mysqlconnector\\2.3.7\\mysqlconnector.2.3.7.nupkg.sha512"
+  ],
+  "logs": []
+}

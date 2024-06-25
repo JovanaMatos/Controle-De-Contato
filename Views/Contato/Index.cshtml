@@ -1,0 +1,53 @@
+﻿@using ControloDeContato.Models;
+@{
+    ViewData["Title"] = "Listagem de Contatos";
+}
+@model List<ContatoModel>
+
+
+<div class="text-center">
+
+    <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+        <a class="btn btn-outline-light" role="button" asp-controller="Contato" asp-action="criar">Adicionar Novos Contactos</a>
+    </div>
+
+    <b></b>
+
+
+
+    <h1 c class="titulo" > Listagem de Conctatos</h1>
+    <table id="content" class="table table-striped">
+        <thead>
+            <tr>
+                <th scope="col" class="letras-brancas">#</th>
+                <th scope="col" class="letras-brancas">Nome</th>
+                <th scope="col" class="letras-brancas">E-mail</th>
+                <th scope="col" class="letras-brancas">Conctato</th>
+                <th scope="col" class="letras-brancas"></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var row in Model)
+        {
+            <tr>
+                    <td class="letras-brancas">@row.Id</td>
+                    <td class="letras-brancas">@row.Nome</td>
+                    <td class ="letras-brancas">@row.Email</td>
+                    <td class ="letras-brancas">@row.Telemovel</td>
+                    <td class ="letras-brancas">
+                    <div class="btn-group" role="group">
+                            <a role="button" class="btn btn-outline-light" asp-controller="Contato" asp-route-id="@row.Id" asp-action="Editar">Editar</a>
+                            <a role="button" class="btn btn-outline-light" asp-controller="Contato" asp-route-id="@row.Id" asp-action="apagarConfirmacao">Apagar</a>
+
+                    </div>
+                    </td>
+
+            </tr>
+            }
+           
+        </tbody>
+    </table>
+
+</div>
+
+
